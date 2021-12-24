@@ -1,0 +1,16 @@
+server:
+  port: 8021
+spring:
+  application:
+    name: rabbitmq-provider
+
+  #����rabbitMQ������
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    #ȷ����Ϣ�ѷ��͵�������(Exchange)
+    publisher-confirm-type: correlated
+    #ȷ����Ϣ�ѷ��͵����У�Queue��
+    publisher-returns: true
